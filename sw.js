@@ -1,5 +1,6 @@
-const CACHE_NAME = 'currency-v3';
-const ASSETS = ['/', '/index.html', '/app.js', '/manifest.json'];
+const CACHE_NAME = 'currency-v4';
+const BASE = self.registration.scope;
+const ASSETS = [BASE, BASE + 'index.html', BASE + 'app.js', BASE + 'manifest.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
